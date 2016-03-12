@@ -16,12 +16,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    
+//    TWTRAPIClient *client = [[TWTRAPIClient alloc] init];
+//    self.dataSource = [[TWTRSearchTimelineDataSource alloc] initWithSearchQuery:@"@PEEK" APIClient:client];
+    
+//    TWTRAPIClient *client = [[TWTRAPIClient alloc] init];
+//    [client loadUserWithID:@"203571341" completion:^(TWTRUser *user, NSError *error) {
+//        if (nil == error) {
+//            NSLog(@"%@", user);
+//        } else {
+//            NSLog(@"%@", error);
+//        }
+//    }];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end
