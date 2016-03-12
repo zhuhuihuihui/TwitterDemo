@@ -15,6 +15,7 @@
 		D20D280A1C92605F007DE28B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D20D28091C92605F007DE28B /* Assets.xcassets */; };
 		D20D280D1C92605F007DE28B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D20D280B1C92605F007DE28B /* LaunchScreen.storyboard */; };
 		D20D28181C92605F007DE28B /* TwitterDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D20D28171C92605F007DE28B /* TwitterDemoTests.m */; };
+		D20D28261C94138C007DE28B /* SearchResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D20D28251C94138C007DE28B /* SearchResultViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 		D20D28131C92605F007DE28B /* TwitterDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20D28171C92605F007DE28B /* TwitterDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwitterDemoTests.m; sourceTree = "<group>"; };
 		D20D28191C92605F007DE28B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D20D28241C94138C007DE28B /* SearchResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchResultViewController.h; path = ViewControllers/SearchResultViewController.h; sourceTree = "<group>"; };
+		D20D28251C94138C007DE28B /* SearchResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchResultViewController.m; path = ViewControllers/SearchResultViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,7 @@
 		D20D27FC1C92605F007DE28B /* TwitterDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D20D28231C94135D007DE28B /* ViewControllers */,
 				D20D28001C92605F007DE28B /* AppDelegate.h */,
 				D20D28011C92605F007DE28B /* AppDelegate.m */,
 				D20D28031C92605F007DE28B /* ViewController.h */,
@@ -133,6 +137,15 @@
 				D20D28191C92605F007DE28B /* Info.plist */,
 			);
 			path = TwitterDemoTests;
+			sourceTree = "<group>";
+		};
+		D20D28231C94135D007DE28B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D20D28241C94138C007DE28B /* SearchResultViewController.h */,
+				D20D28251C94138C007DE28B /* SearchResultViewController.m */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,6 +316,7 @@
 				D20D28051C92605F007DE28B /* ViewController.m in Sources */,
 				D20D28021C92605F007DE28B /* AppDelegate.m in Sources */,
 				D20D27FF1C92605F007DE28B /* main.m in Sources */,
+				D20D28261C94138C007DE28B /* SearchResultViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +445,7 @@
 			baseConfigurationReference = 76A1B41AD7F02E9D65EC85BD /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				INFOPLIST_FILE = TwitterDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Scott.TwitterDemo;

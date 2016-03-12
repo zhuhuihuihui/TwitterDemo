@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Search Result View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SearchResultViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -20,6 +20,10 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5eP-eh-Pue">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="iOf-bV-Ojc"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="DH5-13-S56"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -31,6 +35,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Kl6-Xo-uYZ"/>
+                    <connections>
+                        <outlet property="tableView" destination="5eP-eh-Pue" id="TvS-nO-8x4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -74,11 +81,11 @@
             </objects>
             <point key="canvasLocation" x="600" y="1137"/>
         </scene>
-        <!--Item-->
+        <!--SearchResult-->
         <scene sceneID="qTH-Hk-ggR">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="V0f-HO-jeG" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="yHE-Eo-ewV"/>
+                    <tabBarItem key="tabBarItem" title="SearchResult" id="yHE-Eo-ewV"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5yB-0d-Agd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
