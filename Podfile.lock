@@ -1,5 +1,6 @@
 PODS:
   - Fabric (1.6.7)
+  - INSPullToRefresh (1.1.5)
   - TwitterCore (1.15.3):
     - Fabric
   - TwitterKit (1.15.3):
@@ -7,11 +8,13 @@ PODS:
 
 DEPENDENCIES:
   - Fabric
+  - INSPullToRefresh
   - TwitterCore
   - TwitterKit
 
 SPEC CHECKSUMS:
   Fabric: caf7580c725e64db144f610ac65cd60956911dc7
+  INSPullToRefresh: 112ae2c295d2b3a76daa9dff86e7ef40ed002c47
   TwitterCore: cce24b3c798993ccde72787ea79ea9a478b284e4
   TwitterKit: 43600f2d2848c227739efea5b2939585e69339c3
 

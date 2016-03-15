@@ -5,3 +5,4 @@ use_frameworks!
 pod 'Fabric'
 pod 'TwitterKit'
 pod 'TwitterCore'
+pod 'INSPullToRefresh'
